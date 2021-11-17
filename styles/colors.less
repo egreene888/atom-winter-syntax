@@ -13,13 +13,47 @@
 @red: #cc6666;
 @orange: #de935f;
 @light-orange: #f0c674;
+@white: #ffffff;
 
 @background-hue: 210;
+@background-saturation: 65%;
+@text-saturation: 50%;
+@text-lightness: 60%;
 
-@theme-color-1: hsl(@background-hue, 65%, 18%);
+// Background theme colors
+@theme-color-1: hsl(@background-hue, @background-saturation, 20%);
 @theme-color-2: hsl(@background-hue, 70%, 16%);
+// @theme-color-2: hsl(240, @background-saturation, 20%);
 @theme-color-3: hsl(@background-hue, 50%, 18%);
+@theme-color-green: hsl(180, @background-saturation, 20%);
 @light-theme-color-1: hsl(@background-hue, 20%, 60%);
 @light-theme-color-2: darken(@light-theme-color-1, 20%);
 
-@text-color: hsl(@background-hue, 32%, 65);
+// text colors
+@text-color: hsl(@background-hue, @text-saturation, @text-lightness);
+// @text-color-muted: hsl(@background-hue, 12%, @text-lightness);
+@text-color-muted: darken(desaturate(@text-color, 30%), 10%);
+@text-color-bold: hsl(@background-hue, 40%, 80%); // white
+
+@text-color-purple: hsl(270, @text-saturation, 60%);
+@text-color-blue: hsl(240, 80%, @text-lightness);
+// @text-color-gray: hsl(@background-hue, 40%, 78%);
+@text-color-gray: hsl(@background-hue, 20%, 60%);
+@text-color-aqua: hsl(192, @text-saturation, @text-lightness);
+@text-color-cyan: ##66CCCC;
+@text-color-orange: #cc8f52;
+@text-color-red: #d92626;
+@text-color-yellow: @color-60;
+
+@color-0: hsl(0, @text-saturation, @text-lightness);
+@color-30: hsl(30, @text-saturation, @text-lightness);
+@color-60: hsl(60, @text-saturation, @text-lightness);
+@color-90: hsl(90, @text-saturation, @text-lightness);
+@color-120: hsl(120, @text-saturation, @text-lightness);
+@color-150: hsl(150, @text-saturation, @text-lightness);
+@color-180: hsl(180, @text-saturation, @text-lightness);
+@color-210: hsl(210, @text-saturation, @text-lightness);
+@color-240: hsl(240, @text-saturation, @text-lightness);
+@color-270: hsl(270, @text-saturation, @text-lightness);
+@color-300: hsl(300, @text-saturation, @text-lightness);
+@color-330: hsl(330, @text-saturation, @text-lightness);

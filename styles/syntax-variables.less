@@ -3,21 +3,40 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
-// General colors
-@syntax-text: @light-theme-color-1;
-@syntax-comment: @light-theme-color-1;
-@syntax-invisibles: @light-theme-color-1;
-@syntax-string: @light-theme-color-1;
-@syntax-control: @light-theme-color-1;
-@syntax-dtype: @light-theme-color-1;
-@syntax-keyword: @light-theme-color-1; 
+// Text Colors
+@syntax-text: @text-color-red;
+
+@syntax-comment: @text-color-muted;
+@syntax-invisibles: fade(@text-color-muted, 30%);
+
+@syntax-keyword: @text-color-purple;
+@syntax-control: @text-color-purple;
+@syntax-operator: @text-color;
+@syntax-special-function: @color-180;
+@syntax-dtype: @text-color-gray;
+
+@syntax-function-definition: @light-theme-color-1;
+@syntax-constant: @light-theme-color-1;
+@syntax-string: @text-color-aqua;
+@syntax-numeric: @light-theme-color-1;
+
+@syntax-bold: @light-theme-color-1;
+@syntax-italic: @light-theme-color-1;
+@syntax-ul: @light-theme-color-1;
+@syntax-changed: @light-theme-color-1;
+@syntax-deleted: @light-theme-color-1;
+@syntax-inserted: @light-theme-color-1;
+@syntax-list: @light-theme-color-1;
+@syntax-quote: @light-theme-color-1;
+@syntax-raw: @light-theme-color-1;
+@syntax-heading: @light-theme-color-1;
+@syntax-markup: @light-theme-color-1;
+
+// UI Elements
 @syntax-cursor-color: white;
-
-
-// Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
+@syntax-wrap-guide-color: @syntax-invisibles;
+@syntax-indent-guide-color: @syntax-invisibles;
+// @syntax-invisible-character-color: @gray;
 
 // For find and replace markers
 @syntax-result-marker-color: @light-gray;
