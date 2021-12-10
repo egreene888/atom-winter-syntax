@@ -1,3 +1,7 @@
 .DS_Store
 npm-debug.log
 node_modules
+extractGrammar.py
+pythonstructure.txt
+python.cson
+styles/karel.less

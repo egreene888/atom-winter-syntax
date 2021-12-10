@@ -63,10 +63,29 @@ atom-text-editor {
 
   &.syntax--control {
     color: @syntax-control;
+
+    &.syntax--conditional {
+      color: @syntax-conditional;
+    }
+
+    &.syntax--exception {
+      color: @syntax-exception;
+    }
+
+    &.syntax--repeat {
+      color: @syntax-loop;
+    }
+
+    &.syntax--statement {
+      color: @syntax-return;
+    }
   }
 
   &.syntax--operator {
     color: @syntax-operator;
+    &.syntax--logical {
+      color: @syntax-logical;
+    }
   }
 
   &.syntax--other.syntax--special-method {
@@ -80,21 +99,42 @@ atom-text-editor {
 
 .syntax--storage {
   color: @syntax-function-definition;
+
+  &.syntax--modifier {
+    color: @syntax-modifier;
+  }
+  &.syntax--type {
+    &.syntax--class {
+      color: @syntax-keyword;
+    }
+    &.syntax--function {
+      color: @syntax-keyword;
+    }
+    &.syntax--string {
+      color: @syntax-string;
+    }
+  }
+
 }
 
 .syntax--constant {
-  color: @color-60;
+  color: @syntax-constant;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @syntax-escape-character;
   }
 
   &.syntax--numeric {
-    color: @color-60;
+    color: @syntax-numeric;
   }
-
-  &.syntax--other.syntax--color {
-    color: @cyan;
+  &.syntax--language {
+      color: @syntax-constant;
+  }
+  &.syntax--other.syntax--property {
+      color: @syntax-function-call;
+  }
+  &syntax--other.sytnax--object {
+      color: @syntax-object-call;
   }
 
   &.syntax--other.syntax--symbol {
@@ -110,7 +150,7 @@ atom-text-editor {
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-comment;
+    color: @syntax-text;
   }
 }
 
@@ -145,7 +185,7 @@ atom-text-editor {
     &.syntax--string {
       color: @syntax-string;
     }
-    &.syntax--variable
+    &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
       color: @syntax-text;
@@ -179,10 +219,13 @@ atom-text-editor {
   }
   &.syntax--type {
     color: @syntax-dtype;
+    &.syntax--constructor {
+      color: @syntax-object-call;
+    }
   }
 
   &.syntax--function  {
-    color: @syntax-special-function;
+    color: @syntax-builtin-function;
 
     &.syntax--any-method {
       color: @blue;
@@ -191,34 +234,38 @@ atom-text-editor {
 }
 
 .syntax--entity {
-  &.syntax--name.syntax--function {
-    color: @blue;
-  }
-  &.syntax--name.syntax--type {
-    color: @syntax-dtype;
+  &.syntax--name {
+    &.syntax--function {
+      &.syntax--definition {
+        color: @syntax-function-definition;
+      }
+      color: @syntax-function-call;
+    }
+    &.syntax--type {
+      color: @syntax-dtype;
+    }
+    &.syntax--class,
+    &.syntax--type.syntax--class {
+      color: @syntax-structure-definition;
+    }
+    &.syntax--section {
+      color: @syntax-important-keyword;
+    }
+    &.syntax--tag {
+      color: @text-color-red;
+      text-decoration: underline;
+    }
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
-  }
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
-  }
-
-  &.syntax--name.syntax--section {
-    color: @blue;
-  }
-
-  &.syntax--name.syntax--tag {
-    color: @red;
-    text-decoration: underline;
+    color: @syntax-keyword;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @text-color-orange;
 
     &.syntax--id {
-      color: @blue;
+      color: @text-color-indigo;
     }
   }
 }

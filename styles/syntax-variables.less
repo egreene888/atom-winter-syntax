@@ -4,33 +4,53 @@
 // include a syntax-variables.less file.
 
 // Text Colors
-@syntax-text: @text-color-red;
+@syntax-text: @text-color;
 
 @syntax-comment: @text-color-muted;
 @syntax-invisibles: fade(@text-color-muted, 30%);
 
-@syntax-keyword: @text-color-purple;
-@syntax-control: @text-color-purple;
-@syntax-operator: @text-color;
+@syntax-numeric: @text-color-mono-3;
+@syntax-constant: @text-color-mono-3;
+@syntax-escape-character: @text-color-mono-3;
+@syntax-modifier: @text-color-purple;
+@syntax-function-definition: @text-color-red;
+@syntax-structure-definition: @text-color-red;
+
+@syntax-important-keyword: @text-color-yellow;
+@syntax-keyword: @text-color-bold;
+@syntax-control: @text-color-bold;
+@syntax-conditional: @text-color;
+@syntax-loop: @text-color;
+@syntax-exception: @text-color-red;
+@syntax-operator: @text-color-mono-5;
+@syntax-return: @text-color-yellow;
+@syntax-logical: @text-color-bold;
+@syntax-comparison: @text-color;
+@syntax-assignment: @text-color;
+
+@syntax-illegal: @text-color-red;
+@syntax-punctuation: @text-color;
 @syntax-special-function: @color-180;
 @syntax-dtype: @text-color-gray;
+@syntax-string: @text-color-yellow;
 
-@syntax-function-definition: @light-theme-color-1;
-@syntax-constant: @light-theme-color-1;
-@syntax-string: @text-color-aqua;
-@syntax-numeric: @light-theme-color-1;
+@syntax-builtin-function: @text-color-mono-5;
+@syntax-builtin-error: @text-color-red;
+@syntax-support: @text-color-yellow;
+@syntax-function-call: @text-color;
+@syntax-object-call: @text-color-indigo;
 
-@syntax-bold: @light-theme-color-1;
-@syntax-italic: @light-theme-color-1;
-@syntax-ul: @light-theme-color-1;
-@syntax-changed: @light-theme-color-1;
-@syntax-deleted: @light-theme-color-1;
-@syntax-inserted: @light-theme-color-1;
-@syntax-list: @light-theme-color-1;
-@syntax-quote: @light-theme-color-1;
-@syntax-raw: @light-theme-color-1;
-@syntax-heading: @light-theme-color-1;
-@syntax-markup: @light-theme-color-1;
+@syntax-bold: @text-color;
+@syntax-italic: @text-color;
+@syntax-ul: @text-color;
+@syntax-changed: @text-color;
+@syntax-deleted: @text-color;
+@syntax-inserted: @text-color;
+@syntax-list: @text-color;
+@syntax-quote: @text-color;
+@syntax-raw: @text-color;
+@syntax-heading: @text-color;
+@syntax-markup: @text-color;
 
 // UI Elements
 @syntax-cursor-color: white;
