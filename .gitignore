@@ -5,3 +5,5 @@ extractGrammar.py
 pythonstructure.txt
 python.cson
 styles/karel.less
+cppstructure.txt
+c++.cson
