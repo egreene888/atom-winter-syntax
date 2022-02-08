@@ -4,41 +4,41 @@
 // include a syntax-variables.less file.
 
 // Text Colors
-@syntax-text: @text-color;
+@syntax-text: @image-color-4;
 
-@syntax-comment: @text-color-muted;
-@syntax-invisibles: fade(@text-color-muted, 30%);
+@syntax-comment: @image-color-6; //#00EB00;
+@syntax-invisibles: fade(@syntax-comment, 30%);
 
-@syntax-numeric: @text-color-mono-3;
-@syntax-constant: @text-color-mono-3;
-@syntax-escape-character: @text-color-mono-3;
-@syntax-modifier: @text-color-purple;
-@syntax-function-definition: @text-color-red;
-@syntax-structure-definition: @text-color-red;
+@syntax-numeric: @image-color-7;
+@syntax-constant: @image-color-7;
+@syntax-escape-character: @image-color-11;
+@syntax-modifier: @image-color-7;
+@syntax-function-definition: @image-color-3;
+@syntax-structure-definition: @image-color-3;
 
-@syntax-important-keyword: @text-color-yellow;
-@syntax-keyword: @text-color-bold;
-@syntax-control: @text-color-bold;
-@syntax-conditional: @text-color;
-@syntax-loop: @text-color;
-@syntax-exception: @text-color-red;
-@syntax-operator: @text-color-mono-5;
-@syntax-return: @text-color-yellow;
-@syntax-logical: @text-color-bold;
-@syntax-comparison: @text-color;
-@syntax-assignment: @text-color;
+@syntax-important-keyword: @image-color-8;
+@syntax-keyword: @image-color-8;
+@syntax-control: @image-color-8;
+@syntax-conditional: @image-color-5;
+@syntax-loop: @image-color-5;
+@syntax-exception: @image-color-3;
+@syntax-operator: @image-color-6;
+@syntax-return: @image-color-7;
+@syntax-logical: @image-color-5;
+@syntax-comparison: @image-color-6;
+@syntax-assignment: @image-color-6;
 
-@syntax-illegal: @text-color-red;
-@syntax-punctuation: @text-color;
-@syntax-special-function: @color-180;
-@syntax-dtype: @text-color-purple;
-@syntax-string: @text-color-yellow;
+@syntax-illegal: @image-color-3;
+@syntax-punctuation: @image-color-4;
+@syntax-dtype: @image-color-7;
+@syntax-string: @image-color-10;
+@syntax-variable: @image-color-5;
 
-@syntax-builtin-function: @text-color-mono-5;
-@syntax-builtin-error: @text-color-red;
-@syntax-support: @text-color-yellow;
-@syntax-function-call: @text-color;
-@syntax-object-call: @text-color-indigo;
+@syntax-builtin-function: @image-color-7;
+@syntax-builtin-error: @image-color-3;
+@syntax-support: @image-color-7;
+@syntax-function-call: @image-color-4;
+@syntax-structure-call: @image-color-3;
 
 @syntax-bold: @text-color;
 @syntax-italic: @text-color;
@@ -63,7 +63,7 @@
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @theme-color-1;
+@syntax-gutter-text-color: @syntax-background-color;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 
 
@@ -74,7 +74,7 @@
 @syntax-color-removed: @red;
 
 // Background colors
-@syntax-background-color: @theme-color-1;
-@syntax-selection-color: @theme-color-2;
-@syntax-gutter-background-color: @light-theme-color-1;
-@syntax-gutter-background-color-selected: @light-theme-color-2;
+@syntax-background-color: @image-color-1;
+@syntax-selection-color: lighten(@image-color-1, 10%);
+@syntax-gutter-background-color: @image-color-2;
+@syntax-gutter-background-color-selected: lighten(@image-color-2, 10%); 

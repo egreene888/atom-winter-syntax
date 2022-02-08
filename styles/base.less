@@ -89,7 +89,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @syntax-special-function;
+    color: @syntax-builtin-function;
   }
 
   &.syntax--other.syntax--unit {
@@ -134,7 +134,7 @@ atom-text-editor {
       color: @syntax-function-call;
   }
   &syntax--other.sytnax--object {
-      color: @syntax-object-call;
+      color: @syntax-structure-call;
   }
 
   &.syntax--other.syntax--symbol {
@@ -143,7 +143,7 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @syntax-text;
+  color: @syntax-variable;
 
   &.syntax--interpolation {
     color: darken(@red, 10%);
@@ -220,16 +220,12 @@ atom-text-editor {
   &.syntax--type {
     color: @syntax-dtype;
     &.syntax--constructor {
-      color: @syntax-object-call;
+      color: @syntax-structure-call;
     }
   }
 
   &.syntax--function  {
     color: @syntax-builtin-function;
-
-    &.syntax--any-method {
-      color: @blue;
-    }
   }
 }
 
@@ -262,7 +258,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @text-color-orange;
+    color: @syntax-structure-definition;
 
     &.syntax--id {
       color: @text-color-indigo;
